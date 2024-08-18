@@ -1,0 +1,18 @@
+(function ($, Drupal, once) {
+  Drupal.behaviors.pt_editorial__edit_options_opener = {
+    attach: function (context, settings) {
+      // PT-3487 trigger opening the edit-options fly out when a url query
+      // parameter 'edit-options' is set to true
+      let urlParams = new URLSearchParams(window.location.search);
+      let show_edit_options = urlParams.get('edit-options');
+      let link = document.querySelector('#edit-options');
+      let button = $('#edit-options');
+      let edit_options_state = button.hasClass('active');
+      if (link && show_edit_options === 'true' && !edit_options_state) {
+        link.click();
+        button.addClass('active');
+      }
+    }
+  }
+ })(jQuery, Drupal, once);
+;
