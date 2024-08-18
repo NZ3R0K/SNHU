@@ -1,0 +1,13 @@
+Room Name,Room Item,Room Key,Direction,Room,Direction,Room,Direction,Room,Direction,Room
+Foyer,,,North,Stair Hall,East,Den,West,Writing Room,,
+Writing Room,Guest Bedroom Key,Writing Room Key,North,Library,East,Foyer,,,,
+Den,Library Key,,North,Dining Room,West,Foyer,,,,
+Library,Servants Key,Library Key,East,Stair Hall,South,Writing Room,,,,
+Dining Room,Prepared Meal,,North,Butlers Pantry,South,Den,West,Stair Hall,,
+Stair Hall,,,North,Balcony,East,Dining Room,South,Foyer,West,Library
+Butlers Pantry,Writing Room Key,Servants Key,North,Kitchen,South,Dining Room,,,,
+Kitchen,Study Key,Kitchen Key,South,Butlers Pantry,,,,,,
+Balcony,Daily Newspaper,,North,Master Bedroom,East,Study,South,Stair Hall,West,Guest Bedroom
+Guest Bedroom,Kitchen Key,Guest Bedroom Key,East,Balcony,,,,,,
+Study,Master Bedroom Key,Study Key,West,Balcony,,,,,,
+Master Bedroom,,Master Bedroom Key,South,Balcony,,,,,,
