@@ -1,0 +1,72 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.mainlogo {
+    text-align:center;
+    margin:0 auto;
+}
+
+.logo {
+    width: 15%;
+
+}
+
+.nav-link {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    color: #301E67;
+}
+
+.nav-link:link {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    color:#301E67;
+}
+
+.nav-link:hover {
+    color:#5B8FB9;
+}
+
+.card-body {
+    background-color:#301E67;
+}
+
+.btn-custom {
+    background-color:#B6EADA;
+    color: #000;
+}
+
+footer {
+    background-color: #301E67;
+    color:#fff;
+    margin-top: 25px;
+}
+
+
+
+.bi {
+    color:#fff;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 24px;
+    color: #301E67;
+}
+
+h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    color: #B6EADA;
+}
+
+.card-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}

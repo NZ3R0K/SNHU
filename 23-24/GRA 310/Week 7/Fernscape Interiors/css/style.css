@@ -1,0 +1,179 @@
+.accordion-header-text {
+    text-align: center;
+}
+
+.back-color-prime-green {
+    background-color: #508b71;
+}
+
+.bg-custom {
+    background-color: #ffffff; 
+}
+
+.bi {
+    color: #ffffff;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #0f5138;
+}
+
+.btn-primary:hover {
+    background-color: #ea9f7c;
+}
+
+.btn-primary:link {
+    font-family: "Alice", serif;
+    color: #ffffff;
+    font-size: 30px;    
+}
+
+.carousel-item-services img {  
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    height:50vh;
+  }
+
+.carousel-control-color {
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.contactsocial {
+    color: #b06b34;
+    font-size: 50px;
+}
+
+.container-back-green {
+    background-color: #0f5138; /*0f5138*/
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.custom-button {
+    background-color: #0f5138;
+}
+
+.footer {
+    background-color: #0f5138; /*0f5138*/
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.form-control {
+    background-color: #ea9f7c;
+}
+
+.form-text {
+    font-family: "Alice", serif;
+}
+
+.logo {
+    width: 100px;
+}
+
+.mg-10 {
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: #b06b34
+}
+
+.nav-link:link {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 30px;    
+}
+
+.nav-link:visited {
+    color: #0f5138;
+}
+
+.nav-link-footer:hover {
+    color: #b06b34; 
+}
+
+.nav-link-footer:link {
+    font-family: "Quicksand";
+    color: #ffffff; 
+    font-size: 20px;
+}
+
+.nav-link-footer:visited {
+    color: #ffffff; 
+}
+
+.quote {
+    font-family: "Alice", serif;
+    color:#ffffff;
+    background-color:rgb(0, 0, 0, 0.5);
+    font-size: 24px;
+}
+
+.services-label {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 24px;
+}
+
+.services-icon {
+    width: 128px;
+    align-self: center;
+}
+
+button::after {
+    position: absolute;
+    z-index: 100;
+    right: 16px;
+}
+
+h1 {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 25px;
+}
+
+p {
+    font-family: "Quicksand";
+    font-size: 15;
+}
+
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 4px solid #b06b34;
+    background-color: #ea9f7c ;
+  }

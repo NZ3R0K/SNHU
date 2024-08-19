@@ -1,0 +1,75 @@
+.nav-link:link {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 30px;    
+}
+
+.nav-link:visited {
+    color: #0f5138;
+}
+
+.nav-link:hover {
+    color: #b06b34
+}
+
+.nav-link-footer:link {
+    font-family: "Quicksand";
+    color: #ffffff; 
+    font-size: 20px;
+}
+
+.nav-link-footer:visited {
+    color: #ffffff; 
+}
+
+.nav-link-footer:hover {
+    color: #b06b34; 
+}
+
+.logo {
+    width: 100px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.bg-custom {
+    background-color: #ffffff; 
+}
+
+.footer {
+    background-color: #0f5138; /*0f5138*/
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.container-back-green {
+    background-color: #0f5138; /*0f5138*/
+    color: #ffffff;
+    font-family: "Quicksand";
+}
+
+.bi {
+    color: #ffffff;
+}
+
+.mg-10 {
+    margin: 10px;
+}
+
+h3 {
+    font-family: "Alice", serif;
+    color: #0f5138;
+    font-size: 25;
+}
+
+p {
+    font-family: "Quicksand";
+    font-size: 15;
+}
+
+.back-color-prime-green {
+    background-color: #508b71;
+}
