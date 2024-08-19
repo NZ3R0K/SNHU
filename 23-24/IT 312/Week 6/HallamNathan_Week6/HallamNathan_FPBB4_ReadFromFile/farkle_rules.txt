@@ -1,0 +1,39 @@
+Requirements:
+- At least 2 players
+
+
+
+Points:
+    5   = 50 points
+    1   = 100 points
+(3) 2's = 200 points
+(3) 3's = 300 points
+(3) 4's = 400 points
+(3) 5's = 500 points
+(3) 1's = 1000 points
+
+
+
+Play:
+The current player rolls 6 dice and puts aside any "point dice" (1's, 5's, three of a kind) that appear. 
+The player may choose at this point to either cash the points and add it to their final score - thus ending their turn, 
+or roll the remaining dice to collect more points.
+A Farkle may occur when no point dice appear. 
+When this occurs the player loses any points collected during the turn and the player's turn ends with no points being collected.
+If all 6 dice are point dice the sum of the faces will be recorded and all 6 dice can be rolled again for more points. 
+The recorded value is not added to the score until the player chooses to cash the points and thus can be lost by a Farkle.
+
+
+
+Entering:
+In order to be placed on the scoreboard, the player must cash at least 500 points in a single turn.
+The player will be locked out of cashing any points less than 500 until 500 points is cashed.
+Once the player has cashed at least 500 points they will be placed on the scoreboard.
+After a player is placed on the scoreboard they may cash any amount of points during a turn without restraint
+
+
+Winning:
+In order to win the game a player must achieve 10,000 points cashed on the scoreboard,
+at which point the other players will have one more turn to get more points to beat the set score. 
+If no players are able to achieve more points then the winner is declared. 
+If the score is beat then the new player wins the game.

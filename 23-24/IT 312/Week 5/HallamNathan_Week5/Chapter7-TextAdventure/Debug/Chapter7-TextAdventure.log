@@ -1,0 +1,4 @@
+﻿  GameLoop.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 5\HallamNathan_Week5\Chapter7-TextAdventure\ConsoleTypes.h(36,14): warning C4297: 'ConsoleTypesToString': function assumed not to throw an exception but does
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 5\HallamNathan_Week5\Chapter7-TextAdventure\ConsoleTypes.h(36,14): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+  Chapter7-TextAdventure.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 5\HallamNathan_Week5\Debug\Chapter7-TextAdventure.exe

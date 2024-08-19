@@ -1,0 +1,4 @@
+﻿  HallamNathan_Milestone1_DiceRoll.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 4\HallamNathan_Milestone1\HallamNathan_Milestone1\HallamNathan_Milestone1_DiceRoll.cpp(21,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 4\HallamNathan_Milestone1\HallamNathan_Milestone1\HallamNathan_Milestone1_DiceRoll.cpp(27,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  HallamNathan_Milestone1.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 4\HallamNathan_Milestone1\x64\Debug\HallamNathan_Milestone1.exe

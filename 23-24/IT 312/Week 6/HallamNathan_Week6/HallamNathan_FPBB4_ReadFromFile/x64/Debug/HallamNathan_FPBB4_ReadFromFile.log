@@ -1,0 +1,4 @@
+﻿  HallamNathan_FPBB4_ReadFromFile.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\HallamNathan_FPBB4_ReadFromFile\HallamNathan_FPBB4_ReadFromFile.cpp(20,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\HallamNathan_FPBB4_ReadFromFile\HallamNathan_FPBB4_ReadFromFile.cpp(39,8): warning C4101: 'out': unreferenced local variable
+  HallamNathan_FPBB4_ReadFromFile.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\x64\Debug\HallamNathan_FPBB4_ReadFromFile.exe

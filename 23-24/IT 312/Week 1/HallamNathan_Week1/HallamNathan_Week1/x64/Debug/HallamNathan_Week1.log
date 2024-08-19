@@ -1,0 +1,5 @@
+﻿  DataTypes.cpp
+  GuessingGame.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 1\HallamNathan_Week1\HallamNathan_Week1\GuessingGame.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  HallamNathan_Week1.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 1\HallamNathan_Week1\x64\Debug\HallamNathan_Week1.exe

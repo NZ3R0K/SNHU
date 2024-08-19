@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (Module8Task2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+cl : command line  warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  Lesson5.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 8\Module8Task2\Module8Task2_CONVERTED_MARCH-2\Lesson05\Lesson5.cpp(316,3): warning C4838: conversion from 'int' to 'BYTE' requires a narrowing conversion
+  lesson5.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 8\Module8Task2\Module8Task2_CONVERTED_MARCH-2\Lesson05\Debug\Lesson5.exe

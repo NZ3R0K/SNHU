@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (HallamNathan_Week6.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  HallamNathan)WriteToFile.cpp
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\HallamNathan_Week6\HallamNathan)WriteToFile.cpp(25,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\HallamNathan_Week6\HallamNathan)WriteToFile.cpp(88,8): warning C4101: 'out': unreferenced local variable
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\HallamNathan_Week6\HallamNathan)WriteToFile.cpp(127): warning C4715: 'ReadFromFile': not all control paths return a value
+  HallamNathan_Week6.vcxproj -> C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 312\Week 6\HallamNathan_Week6\x64\Debug\HallamNathan_WriteToFile.exe
