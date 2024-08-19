@@ -1,0 +1,11 @@
+Model Information:
+* title:	Junction Box
+* source:	https://sketchfab.com/3d-models/junction-box-7d53b8db943049e28e56efe8773386da
+* author:	413x_B (https://sketchfab.com/413x_B)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Junction Box" (https://sketchfab.com/3d-models/junction-box-7d53b8db943049e28e56efe8773386da) by 413x_B (https://sketchfab.com/413x_B) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
