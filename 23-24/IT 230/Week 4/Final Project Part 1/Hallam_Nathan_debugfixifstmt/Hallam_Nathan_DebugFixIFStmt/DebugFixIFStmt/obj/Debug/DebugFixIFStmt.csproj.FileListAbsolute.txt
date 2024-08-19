@@ -1,0 +1,12 @@
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week4\DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.exe.config
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week4\DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week4\DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.pdb
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week4\DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week4\DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.exe.config
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\bin\Debug\DebugFixIFStmt.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.csproj.AssemblyReference.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Final Project Part 1\IT 230 Coding Activity Module Four Debug Fix Ifstmt\Hallam_Nathan_DebugFixIFStmt\DebugFixIFStmt\obj\Debug\DebugFixIFStmt.pdb

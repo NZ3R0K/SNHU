@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\bin\Debug\net7.0\HallamNathan_Arrays.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\bin\Debug\net7.0\HallamNathan_Arrays.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\bin\Debug\net7.0\HallamNathan_Arrays.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\bin\Debug\net7.0\HallamNathan_Arrays.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\bin\Debug\net7.0\HallamNathan_Arrays.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\refint\HallamNathan_Arrays.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\HallamNathan_Arrays.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 8\HallamNathan_Arrays\HallamNathan_Arrays\obj\Debug\net7.0\ref\HallamNathan_Arrays.dll

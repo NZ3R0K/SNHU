@@ -1,0 +1,12 @@
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe.config
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.pdb
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe.config
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.csproj.AssemblyReference.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Milestone 1\it230_coding_activity_module_three_debug_fix_methods\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.pdb

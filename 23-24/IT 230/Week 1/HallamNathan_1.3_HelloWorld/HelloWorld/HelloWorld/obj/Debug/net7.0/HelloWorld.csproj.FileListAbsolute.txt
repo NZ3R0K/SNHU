@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\bin\Debug\net7.0\HelloWorld.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\bin\Debug\net7.0\HelloWorld.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\bin\Debug\net7.0\HelloWorld.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\bin\Debug\net7.0\HelloWorld.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\bin\Debug\net7.0\HelloWorld.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\refint\HelloWorld.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\HelloWorld.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 1\HelloWorld\HelloWorld\obj\Debug\net7.0\ref\HelloWorld.dll

@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\bin\Debug\net7.0\ConvertStringToType.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\bin\Debug\net7.0\ConvertStringToType.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\bin\Debug\net7.0\ConvertStringToType.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\bin\Debug\net7.0\ConvertStringToType.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\bin\Debug\net7.0\ConvertStringToType.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\refint\ConvertStringToType.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ConvertStringToType.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 2\HallamNathan_ConvertString\ConvertStringToType\obj\Debug\net7.0\ref\ConvertStringToType.dll

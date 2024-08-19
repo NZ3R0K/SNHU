@@ -1,0 +1,28 @@
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.exe.config
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.pdb
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\MainWindow.g.cs
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\App.g.cs
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs_MarkupCompile.cache
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs_MarkupCompile.lref
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\MainWindow.baml
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.g.resources
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.Properties.Resources.resources
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.csproj.GenerateResource.Cache
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week6\CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.csproj.AssemblyReference.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\MainWindow.g.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\App.g.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs_MarkupCompile.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs_MarkupCompile.lref
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.exe.config
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\bin\Debug\CreateClassesObjs.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\MainWindow.baml
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.g.resources
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.Properties.Resources.resources
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.csproj.GenerateResource.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\IT 230 Coding Activity 6_2 Create Classes Objs\IT230_CodingActivity6_2_CreateClassesObjs\CreateClassesObjs\obj\Debug\CreateClassesObjs.csproj.CoreCompileInputs.cache

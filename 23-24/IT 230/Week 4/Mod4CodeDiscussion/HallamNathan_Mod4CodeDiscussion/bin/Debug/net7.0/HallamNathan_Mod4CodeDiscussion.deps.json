@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "HallamNathan_Mod4CodeDiscussion/1.0.0": {
+        "runtime": {
+          "HallamNathan_Mod4CodeDiscussion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HallamNathan_Mod4CodeDiscussion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

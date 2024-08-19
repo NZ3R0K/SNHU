@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\refint\HallamNathan_Mod3CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod3CodeDiscussion.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 3\Mod3CodeDicussion\HallamNathan_Mod3CodeDiscussion\obj\Debug\net7.0\ref\HallamNathan_Mod3CodeDiscussion.dll

@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\bin\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\refint\HallamNathan_Mod4CodeDiscussion.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\HallamNathan_Mod4CodeDiscussion.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 4\Mod4CodeDiscussion\HallamNathan_Mod4CodeDiscussion\obj\Debug\net7.0\ref\HallamNathan_Mod4CodeDiscussion.dll

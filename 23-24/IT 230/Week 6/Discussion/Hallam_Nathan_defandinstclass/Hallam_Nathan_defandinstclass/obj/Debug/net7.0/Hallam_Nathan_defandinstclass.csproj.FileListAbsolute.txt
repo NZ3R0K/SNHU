@@ -1,0 +1,14 @@
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\bin\Debug\net7.0\Hallam_Nathan_defandinstclass.exe
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\bin\Debug\net7.0\Hallam_Nathan_defandinstclass.deps.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\bin\Debug\net7.0\Hallam_Nathan_defandinstclass.runtimeconfig.json
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\bin\Debug\net7.0\Hallam_Nathan_defandinstclass.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\bin\Debug\net7.0\Hallam_Nathan_defandinstclass.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.AssemblyInfoInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.AssemblyInfo.cs
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\refint\Hallam_Nathan_defandinstclass.dll
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.pdb
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\Hallam_Nathan_defandinstclass.genruntimeconfig.cache
+C:\Users\Nathan\Desktop\College\SNHU\23-24\IT 230\Week 6\defandinstclass\Hallam_Nathan_defandinstclass\obj\Debug\net7.0\ref\Hallam_Nathan_defandinstclass.dll
