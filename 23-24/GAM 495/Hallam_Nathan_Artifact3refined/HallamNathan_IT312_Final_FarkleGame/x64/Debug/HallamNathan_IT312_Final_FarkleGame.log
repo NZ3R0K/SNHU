@@ -1,0 +1,14 @@
+﻿  FarkleCore.cpp
+C:\Users\Nathan\Documents\Github\NZ3R0K\SNHU\23-24\GAM 495\Hallam_Nathan_Artifact3refined\HallamNathan_IT312_Final_FarkleGame\FarkleCore.h(12,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'FarkleCore.cpp')
+  
+  FarkleMain.cpp
+C:\Users\Nathan\Documents\Github\NZ3R0K\SNHU\23-24\GAM 495\Hallam_Nathan_Artifact3refined\HallamNathan_IT312_Final_FarkleGame\FarkleCore.h(12,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'FarkleMain.cpp')
+  
+  FileReader.cpp
+C:\Users\Nathan\Documents\Github\NZ3R0K\SNHU\23-24\GAM 495\Hallam_Nathan_Artifact3refined\HallamNathan_IT312_Final_FarkleGame\FileReader.cpp(25,8): warning C4101: 'out': unreferenced local variable
+  Game.cpp
+C:\Users\Nathan\Documents\Github\NZ3R0K\SNHU\23-24\GAM 495\Hallam_Nathan_Artifact3refined\HallamNathan_IT312_Final_FarkleGame\Game.cpp(160,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  HallamNathan_IT312_Final_FarkleGame.vcxproj -> C:\Users\Nathan\Documents\Github\NZ3R0K\SNHU\23-24\GAM 495\Hallam_Nathan_Artifact3refined\x64\Debug\HallamNathan_IT312_Final_FarkleGame.exe
