@@ -20,11 +20,12 @@ private:
 	void PrintCommands() const;
 	void PrintTurnInfo() const;
 	void GetInput(string& input) const;
-	void CalculateInput(string command) const;
+	void HandleInput(string command) const;
 	int CalculateEndGameInput(string input) const;
 	void PrintScoreboard() const;
 	void CashScore() const;
 	void WaitForKey() const;
+	bool SaveToFile() const;
 public:
 	void CoreLoop();
 };

@@ -22,8 +22,6 @@ string FileReader::ReadFile(string fileName) {
 
 	//If file exists
 	if (file) {
-		char out;
-
 		while (true) {
 			//If end of file is found, break loop
 			if (file.eof()) {
@@ -44,4 +42,37 @@ string FileReader::ReadFile(string fileName) {
 	file.close();
 
 	return output;
+}
+
+bool FileReader::WriteToFile(Player* players, int currentTurn, int playerCount)
+{
+	string output;
+	fstream file;
+
+	//Open file to read
+	file.open("farkle_save.txt", ios::out);
+
+	//If file does not exist
+	if (!file)
+	{
+		file.close();
+		return false;
+	}
+
+	file << "Turn: " << currentTurn << ";" << "\n\n";
+	file << "Players: " << playerCount << ";" << "\n\n";
+
+	for(int i = 0; i < playerCount; i++)
+	{
+		file << "{" << "\n";
+		file << "Name: " << players[i].GetName() << ";\n";
+		file << "Score: " << players[i].GetScore() << ";\n";
+		file << "Position: " << players[i].GetScoreboardPosition() << ";\n";
+		file << "}" << "\n\n";
+	}
+
+	//Close file once done
+	file.close();
+
+	return true;
 }

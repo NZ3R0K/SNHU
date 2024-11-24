@@ -99,14 +99,19 @@ int numOfPlayers = 0,				//Number of players in the game
 	}
 
 	//Adds a player to the array of players
-	void GameInfo::AddPlayer(string playerName) {
+	void GameInfo::AddPlayer(string playerName, int score = 0, int scoreboardPos = -1) {
 		numOfPlayers++;	//Increment number of players up
 
 		//Resize array to fit new player
 		ResizePlayerArray(players, numOfPlayers);
 
-		players[numOfPlayers - 1].SetName(playerName);					//Set name
-		players[numOfPlayers - 1].SetScoreboardPosition(numOfPlayers);	//Set initial scoreboard position
+		players[numOfPlayers - 1].SetName(playerName);
+		players[numOfPlayers - 1].SetScore(score);
+
+		if (scoreboardPos == -1)
+			players[numOfPlayers - 1].SetScoreboardPosition(numOfPlayers);
+		else
+			players[numOfPlayers - 1].SetScoreboardPosition(scoreboardPos);
 	}
 
 	//Removes a player from the array give the players position in the array
@@ -146,6 +151,7 @@ int numOfPlayers = 0,				//Number of players in the game
 	void GameInfo::ClearPlayers() const {
 		delete[] players;			//free memory
 		players = new Player[1];	//Have at least one slot to start
+		numOfPlayers = 0;
 	}
 #pragma endregion
 
@@ -153,11 +159,33 @@ int numOfPlayers = 0,				//Number of players in the game
 	//Get number of players in game and set aliases. Start first turn
 	void GameInfo::Initialize() {
 		int playerCount = 0;
+		string loadSave;
 
 		//Resets game state to initial (mainly used for when game restarts)
 		Reset();
 
 		srand(time(NULL)); // initialize random seed:
+
+		do
+		{
+			PrintWithColor("Do you want to load the previous save? (Y/N)\n", Colors::yellow, Colors::black);
+			cin >> loadSave;
+
+			//If input is not an integer
+			if (!cin.good()) {
+				PrintWithColor("Invalid Input!\n", Colors::red, Colors::black);
+
+				cin.clear();	//Clear input
+				cin.ignore();	//Ignore last input
+				continue;
+			}
+		} while ((loadSave != "Y" && loadSave != "y") && (loadSave != "N" && loadSave != "n"));
+
+		if (loadSave != "Y" || loadSave != "y")
+		{
+			LoadSave();
+			return;
+		}
 
 		do
 		{
@@ -247,6 +275,70 @@ int numOfPlayers = 0,				//Number of players in the game
 	//Reads the associated text file for the game rules and returns its contents as a string
 	void GameInfo::PrintRules() {
 		cout << FileReader::ReadFile("farkle_rules.txt") << endl;
+	}
+
+	bool GameInfo::SaveGame() {
+		bool success = FileReader::WriteToFile(players, currentTurn, numOfPlayers);
+		PrintWithColor("Saved Successfully!\n\n", Colors::green, Colors::black);
+
+		return success;
+	}
+
+	void GameInfo::LoadSave() {
+		string	subString,
+				subStringValue,
+				saveText;
+		int subStringLength,
+			playerCount = 0;
+
+		ClearPlayers();
+
+		currentTurn = -1;
+		saveText = FileReader::ReadFile("farkle_save.txt");		//Read file and get string
+
+		//Get player count and turn
+		for (int i = 0; i < 2; i++)
+		{
+			subStringLength = saveText.find(';');					//Find delimiter for the end of a value
+			subString = saveText.substr(0, subStringLength);		//Get substring from delimiter
+			saveText.erase(0, subStringLength + 3);					//Remove substring from overall text to continue process
+			subStringLength = subString.find(':');					//Find delimiter in substring
+			subStringValue = subString.substr(subStringLength + 2);	//Get value from substring
+
+			if (i == 0)
+				currentTurn = stoi(subStringValue);					//Convert string value to int
+
+			if (i == 1)
+				playerCount = stoi(subStringValue);				//Convert string value to int
+		}
+
+		for (int i = 0; i < playerCount; i++)
+		{
+			string name;
+			int score,
+				position;
+			
+			for (int j = 0; j < 3; j++)
+			{
+				subStringLength = saveText.find(';');			//Find delimiter for the end of a value
+				subString = saveText.substr(0, subStringLength);//Get substring from delimiter
+				saveText.erase(0, subStringLength + 2);			//Remove substring from overall text to continue process
+
+				subStringLength = subString.find(':');					//Find delimiter in substring
+				subStringValue = subString.substr(subStringLength + 2);	//Get value from substring
+
+				if (j == 0)
+					name = subStringValue;
+				if (j == 1)
+					score = stoi(subStringValue);
+				if (j == 2)
+					position = stoi(subStringValue);
+			}
+
+			AddPlayer(name, score, position);
+		}
+
+		PrintWithColor("Save Loaded Successfully!", Colors::yellow, Colors::black);
 	}
 #pragma endregion
 

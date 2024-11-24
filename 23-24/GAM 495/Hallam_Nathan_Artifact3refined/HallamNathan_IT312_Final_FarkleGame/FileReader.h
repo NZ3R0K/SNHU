@@ -11,6 +11,7 @@ Description : Header file containing the function declaration for reading a file
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "Player.h"
 
 using namespace std;
 
@@ -18,4 +19,6 @@ class FileReader {
 
 public:
 	static string ReadFile(string fileName);
+
+	static bool WriteToFile(Player* players, int currentTurn, int playerCount);
 };

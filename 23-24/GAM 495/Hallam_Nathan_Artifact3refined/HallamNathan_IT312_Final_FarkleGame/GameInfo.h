@@ -27,7 +27,7 @@ public:
 	Player& GetPlayer(int arrayPosition);
 	Player& GetCurrentPlayer();
 
-	void AddPlayer(string playerName);
+	void AddPlayer(string playerName, int score, int scoreboardPos);
 	void RemovePlayer(int arrayPosition) const;
 	void ClearPlayers() const;
 #pragma endregion
@@ -36,6 +36,8 @@ public:
 	void Initialize();
 	void Reset() const;
 	void PrintRules();
+	bool SaveGame();
+	void LoadSave();
 	bool CheckForWinner();
 #pragma endregion
 

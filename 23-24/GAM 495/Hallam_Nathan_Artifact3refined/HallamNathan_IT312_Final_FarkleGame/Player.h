@@ -53,6 +53,11 @@ public:
 		_score += points;
 	}
 
+	//Adds points to the scoreboard given the sum of points
+	void SetScore(int points) {
+		_score = points;
+	}
+
 	//Sets the players name
 	void SetName(string name) {
 		_name = name;

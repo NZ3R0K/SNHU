@@ -1,0 +1,16 @@
+Turn: 1;
+
+Players: 2;
+
+{
+Name: A;
+Score: 600;
+Position: 1;
+}
+
+{
+Name: B;
+Score: 1500;
+Position: 0;
+}
+

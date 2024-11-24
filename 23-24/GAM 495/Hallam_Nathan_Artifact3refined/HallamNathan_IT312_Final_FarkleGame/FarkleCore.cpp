@@ -73,7 +73,21 @@ void FarkleCore::CoreLoop() {
 			Game.PrintWithColor("What is your command? ", Colors::yellow, Colors::black);
 			GetInput(input);
 
-			CalculateInput(input);	//Determine what menu command was selected and continue based on that selection
+			HandleInput(input);	//Determine what menu command was selected and continue based on that selection
+
+			if (Game.GetPlayerCount() >= 2 && (input == "Q" || input == "q"))
+			{
+				do
+				{
+					Game.PrintWithColor("Would you like to save the games progress? (Y/N)\n", Colors::yellow, Colors::black);
+					GetInput(input);
+				} while ((input != "Y" && input != "y") && (input != "N" && input != "n"));
+
+				if (input == "Y" || input == "y")
+					SaveToFile();
+
+				input = "Q";
+			}
 
 			WaitForKey();
 
@@ -97,7 +111,8 @@ void FarkleCore::PrintCommands() const
 		"D - Drop Out\n"
 		"R - Roll Dice [" + to_string(Game.GetUnrolledDiceCount()) + " dice]\n"
 		"C - Cash Dice [" + to_string(Game.GetCurrentScore()) + " points]\n"
-		"S - Show Scoreboard\n"
+		"L - Show Scoreboard\n"
+		"S - Save Game to File\n"
 		"H - How to Play\n\n\n",Colors::turquoise, Colors::black);
 }
 
@@ -121,7 +136,7 @@ void FarkleCore::GetInput(string& input) const
 }
 
 //Given a command, process the input and perform its given action
-void FarkleCore::CalculateInput(string command) const
+void FarkleCore::HandleInput(string command) const
 {
 	//Quit program
 	if (command == "Q" || command == "q") {
@@ -136,7 +151,7 @@ void FarkleCore::CalculateInput(string command) const
 		CashScore();
 	}
 	//View Scoreboard
-	else if (command == "S" || command == "s") {
+	else if (command == "L" || command == "l") {
 		PrintScoreboard();
 	}
 	//Drop out
@@ -147,6 +162,11 @@ void FarkleCore::CalculateInput(string command) const
 	else if (command == "H" || command == "h") {
 		system("cls");
 		Game.PrintRules();
+	}
+	//Save to File
+	else if (command == "S" || command == "s") {
+		system("cls");
+		SaveToFile();
 	}
 	//Default
 	else {
@@ -221,4 +241,9 @@ void FarkleCore::CashScore() const {
 void FarkleCore::WaitForKey() const {
 	Game.PrintWithColor("Press any key to continue...\n", Colors::yellow, Colors::black);
 	_getch();
+}
+
+bool FarkleCore::SaveToFile() const
+{
+	return Game.SaveGame();
 }
