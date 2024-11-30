@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -22,7 +20,9 @@ public class AsteroidStats
 	[Tooltip("The max amount of damage the object can take")]
 	public float HP;
 	[Tooltip("The modifier that dictates the velocity of the object")]
-	public float speed;
+	public float speedMax;
+	[Tooltip("The modifier that dictates the velocity of the object")]
+	public float speedMin;
 	[Tooltip("How many objects will this object split into when destroyed")]
 	public int splitCount;
 	[Tooltip("What object this object will split into when destroyed. -1 is none")]
@@ -43,7 +43,8 @@ public class AsteroidStats
 		color = stats.color;
 		sprite = stats.sprite;
 		HP = stats.HP;
-		speed = stats.speed;
+		speedMax = stats.speedMax;
+		speedMin = stats.speedMin;
 		splitCount = stats.splitCount;
 		splitIndex = stats.splitIndex;
 		lifetime = stats.lifetime;

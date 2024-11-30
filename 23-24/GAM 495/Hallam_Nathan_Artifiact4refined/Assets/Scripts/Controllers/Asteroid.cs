@@ -10,6 +10,7 @@ public class Asteroid : MonoBehaviour
 {
 	private const int UPDATE_HEALTH = 1;
 	public string ID;
+	private float speed = -1;
 
 	public static int totalWeight; // The maximum weight of asteroids currently in the level
 
@@ -60,12 +61,14 @@ public class Asteroid : MonoBehaviour
 			edgeCollider.enabled = false;
 		}
 
+		speed = Random.Range(ASs.speedMin, ASs.speedMax);
+
 		PhotonNetwork.NetworkingClient.EventReceived += this.UpdateAsteroidHealth;
 	}
 
 	public void Update()
 	{
-		Move(ASs.speed * GameSettingsManager.Instance.asteroidSpeedMultiplier);
+		Move(speed * GameSettingsManager.Instance.asteroidSpeedMultiplier);
 		SpriteRotate();
 
 		Debug.DrawLine(transform.position, transform.position + (transform.up * 2), new Color(0, 0, 255, 255), 0f, false);
