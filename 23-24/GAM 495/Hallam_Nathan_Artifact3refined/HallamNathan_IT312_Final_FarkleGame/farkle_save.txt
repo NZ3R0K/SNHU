@@ -13,4 +13,3 @@ Name: B;
 Score: 1500;
 Position: 0;
 }
-

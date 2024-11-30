@@ -7,7 +7,6 @@ File Name	: FarkleMain.cpp
 Description : Nothing special here, just the main call for the entire program.
 */
 
-#include "Player.h"
 #include "FarkleCore.h"
 
 int main() {
