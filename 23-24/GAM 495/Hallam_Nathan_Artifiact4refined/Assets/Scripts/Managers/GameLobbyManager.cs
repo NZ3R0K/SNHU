@@ -219,13 +219,6 @@ public class GameLobbyManager : MonoBehaviourPunCallbacks
 
 	public void StartGame()
 	{
-		if (gameStarting)
-		{
-			gameStarting = false;
-		}
-		else
-		{
-			gameStarting = true;
-		}
+		gameStarting = (gameStarting == true) ? false : true;
 	}
 }

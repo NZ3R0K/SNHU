@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 	public List<AsteroidStats> asteroids = new List<AsteroidStats>();
 	public List<WeaponStats> weapons = new List<WeaponStats>();
 
-	public ShuttleInfo shuttleStats;
+	public List<PlayerStats> shuttleStats = new();
 	public CanvasGroup DeathCanvas;
 	public List<GameObject> AlivePlayers = new List<GameObject>();
 
@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
 
 	void SpawnPlayer()
 	{
-		foreach (var shuttle in shuttleStats.shuttles)
+		foreach (var shuttle in shuttleStats)
 		{
 			if (shuttle.shuttleName == PhotonNetwork.LocalPlayer.CustomProperties["shuttleName"].ToString())
 			{

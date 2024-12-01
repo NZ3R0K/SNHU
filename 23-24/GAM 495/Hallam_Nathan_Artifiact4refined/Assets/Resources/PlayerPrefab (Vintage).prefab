@@ -10021,17 +10021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d242eb0df23994e89ba3dc38aca7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 71
-  acceleration: 10
-  rotationSpeed: 145
-  brakingPower: 0.15
-  maxShieldStrength: 10
-  shieldRechargeRate: 5
-  shieldRechargeWait: 4
-  shieldRegenRate: 4
-  shieldRegenPause: 3
-  shieldRegenWait: 5
-  gracePeriod: 1.5
+  stats: {fileID: 11400000, guid: b97b790f14ac85d4bbfc312f9ca4e1c3, type: 2}
   ShieldBar: {fileID: 6192822319869387879}
   ShieldRecharge: {fileID: 2300805332621911464}
   Shields: {fileID: 3287356233225159126}

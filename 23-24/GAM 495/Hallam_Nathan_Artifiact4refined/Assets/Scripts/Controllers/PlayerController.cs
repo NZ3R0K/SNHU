@@ -16,43 +16,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
 	PolygonCollider2D polyCollider;
 	SpriteRenderer SR;
 
-	#region Movement Variables
-	[Header("Movement")]
-	[Tooltip("How fast the player is capable of moving")]
-	[SerializeField] float maxSpeed = 71f;
-	[Tooltip("How fast the player will accelerate")]
-	[SerializeField] float acceleration = 10f;
-	[Tooltip("How fast the player will rotate")]
-	[SerializeField] float rotationSpeed = 145f;
-	[Tooltip("How long it takes for the player to stop moving when not thrusting. 0 is no stopping.")]
-	[Range(0f, 1f)]
-	[SerializeField] float brakingPower = 0.15f;
-	#endregion Movement Variables
-
-	#region Shield Variables
-	// Recharging - The process of a shield filling broken portions of its array when damaged
-	// Regenerate - The process of a shield rebuilding the entire shield array when broken
-	[Header("Shields")]
-	[Tooltip("The maximum HP the shields have")]
-	[SerializeField] float maxShieldStrength = 10f;
-
-	[Tooltip("How many points does the shields regenerate per second when damaged")]
-	[SerializeField] float shieldRechargeRate = 10f;
-
-	[Tooltip("How long in seconds the player has to wait for shields to begin recharge")]
-	[SerializeField] float shieldRechargeWait = 3f;
-
-	[Tooltip("How many points does the shields regenerate per second when broken")]
-	[SerializeField] float shieldRegenRate = 2f;
-
-	[Tooltip("How long in seconds it takes for the shields regeneration timer to start after the shields are broken")]
-	[SerializeField] float shieldRegenPause = 5f;
-
-	[Tooltip("The total time in seconds the player has to wait for shields to begin regenerate")]
-	[SerializeField] float shieldRegenWait = 10f;
-
-	[Tooltip("How many seconds of invulnerability does the player have when their sheilds break")]
-	[SerializeField] float gracePeriod = 1.5f;
+	public PlayerStats stats;
 
 	bool hasGraced = false;
 
@@ -68,7 +32,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
 	IEnumerator _shieldTimer;
 	IEnumerator _graceTimer;
 	IEnumerator _shieldBlinkTimer;
-	#endregion Shield Variables
+	//#endregion Shield Variables
 
 	ParticleSystem JetTrailPS;
 	ParticleSystem ShieldsDestroyedPS;
@@ -124,21 +88,10 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 		shuttleName = (string)properties["shuttleName"];
 
-		foreach (var shuttle in GameManager.Instance.shuttleStats.shuttles)
+		foreach (var shuttle in GameManager.Instance.shuttleStats)
 		{
 			if (shuttle.shuttleName == shuttleName)
 			{
-				acceleration = shuttle.acceleration;
-				brakingPower = shuttle.brakingPower;
-				gracePeriod = shuttle.gracePeriod;
-				maxShieldStrength = shuttle.maxShieldStrength;
-				maxSpeed = shuttle.maxSpeed;
-				rotationSpeed = shuttle.rotationSpeed;
-				shieldRechargeRate = shuttle.shieldRechargeRate;
-				shieldRechargeWait = shuttle.shieldRechargeWait;
-				shieldRegenPause = shuttle.shieldRegenPause;
-				shieldRegenRate = shuttle.shieldRegenRate;
-				shieldRegenWait = shuttle.shieldRegenWait;
 				gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = shuttle.shuttleSprite;
 			}
 		}
@@ -181,13 +134,13 @@ public class PlayerController : MonoBehaviour, IPunObservable
 		{
 			GetInput();
 
-			if (forward && rb.linearVelocity.magnitude < (maxSpeed * GameSettingsManager.Instance.playerMaxSpeedMultiplier) && !chat.activeInHierarchy())
+			if (forward && rb.linearVelocity.magnitude < (stats.MaxSpeed.Value * GameSettingsManager.Instance.playerMaxSpeedMultiplier) && !chat.activeInHierarchy())
 			{
 				Move(GameSettingsManager.Instance.playerAccelerationMultiplier);
 			}
 			else 
 			{
-				rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, Vector2.zero, (brakingPower * GameSettingsManager.Instance.playerBrakingpowerMultiplier) * (rb.linearVelocity.magnitude / 10));				
+				rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, Vector2.zero, (stats.BrakingPower.Value * GameSettingsManager.Instance.playerBrakingpowerMultiplier) * (rb.linearVelocity.magnitude / 10));				
 			}
 
 			if (forward && !chat.activeInHierarchy())
@@ -247,21 +200,10 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 			if (shuttleName != properties["shuttleName"].ToString())
 			{
-				foreach (var shuttle in GameManager.Instance.shuttleStats.shuttles)
+				foreach (var shuttle in GameManager.Instance.shuttleStats)
 				{
 					if (shuttle.shuttleName == shuttleName)
 					{
-						acceleration = shuttle.acceleration;
-						brakingPower = shuttle.brakingPower;
-						gracePeriod = shuttle.gracePeriod;
-						maxShieldStrength = shuttle.maxShieldStrength;
-						maxSpeed = shuttle.maxSpeed;
-						rotationSpeed = shuttle.rotationSpeed;
-						shieldRechargeRate = shuttle.shieldRechargeRate;
-						shieldRechargeWait = shuttle.shieldRechargeWait;
-						shieldRegenPause = shuttle.shieldRegenPause;
-						shieldRegenRate = shuttle.shieldRegenRate;
-						shieldRegenWait = shuttle.shieldRegenWait;
 						gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = shuttle.shuttleSprite;
 					}
 				}
@@ -281,21 +223,21 @@ public class PlayerController : MonoBehaviour, IPunObservable
 	void Move(float value)
 	{
 		// Apply force behind ship to propel forward
-		rb.AddForce(transform.up * acceleration * value * Time.deltaTime);
+		rb.AddForce(transform.up * stats.Acceleration.Value * value * Time.deltaTime);
 	}
 
 	void Rotate(float value)
 	{
-		gameObject.transform.Rotate(Vector3.back * value * rotationSpeed * Time.deltaTime);
+		gameObject.transform.Rotate(Vector3.back * value * stats.RotationSpeed.Value * Time.deltaTime);
 	}
 
 	void UpdateHUD()
 	{
-		float shieldPercentage = currentShieldStrength / (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier);
+		float shieldPercentage = currentShieldStrength / (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier);
 
 		ShieldBar.fillAmount = shieldPercentage;
 
-		if (_shieldBlinkTimer == null && currentShieldStrength < ((maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier) / 3) && currentShieldStrength > 0)
+		if (_shieldBlinkTimer == null && currentShieldStrength < ((stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier) / 3) && currentShieldStrength > 0)
 		{
 			_shieldBlinkTimer = ShieldLowBlink();
 			StartCoroutine(_shieldBlinkTimer);
@@ -340,25 +282,25 @@ public class PlayerController : MonoBehaviour, IPunObservable
 		{
 			currentShieldEnergy += Time.fixedDeltaTime;
 
-			float shieldRechargePercentage = currentShieldEnergy / shieldRechargeWait;
+			float shieldRechargePercentage = currentShieldEnergy / stats.ShieldRechargeTimer.Value;
 
 			ShieldRecharge.fillAmount = shieldRechargePercentage;
 
 			yield return new WaitForFixedUpdate();
 		}
-		while (currentShieldEnergy < shieldRechargeWait);
+		while (currentShieldEnergy < stats.ShieldRechargeTimer.Value);
 
 		yield return new WaitForEndOfFrame();
 
 		do
 		{
-			currentShieldStrength += (shieldRechargeRate * Time.fixedDeltaTime);
+			currentShieldStrength += (stats.ShieldRechargeRate.Value * Time.fixedDeltaTime);
 
 			yield return new WaitForFixedUpdate();
 		}
-		while (currentShieldStrength < (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier));
+		while (currentShieldStrength < (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier));
 
-		currentShieldStrength = (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier);
+		currentShieldStrength = (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier);
 
 		_shieldTimer = null;
 
@@ -377,11 +319,11 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 		if (!hasGraced)
 		{
-			_graceTimer = GraceTimer(gracePeriod);
+			_graceTimer = GraceTimer(stats.GracePeriod.Value);
 			StartCoroutine(_graceTimer);
 		}
 
-		yield return new WaitForSeconds(shieldRegenPause);
+		yield return new WaitForSeconds(stats.ShieldRegenDelay.Value);
 
 		float currentShieldEnergy = 0;
 
@@ -389,13 +331,13 @@ public class PlayerController : MonoBehaviour, IPunObservable
 		{
 			currentShieldEnergy += Time.fixedDeltaTime;
 
-			float shieldRegenPercentage = currentShieldEnergy / shieldRegenWait;
+			float shieldRegenPercentage = currentShieldEnergy / stats.ShieldRegenTimer.Value;
 
 			ShieldRecharge.fillAmount = shieldRegenPercentage;
 
 			yield return new WaitForFixedUpdate();
 		}
-		while (currentShieldEnergy < shieldRegenWait);
+		while (currentShieldEnergy < stats.ShieldRegenTimer.Value);
 
 		yield return new WaitForEndOfFrame();
 
@@ -406,13 +348,13 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 		do
 		{
-			currentShieldStrength += (shieldRegenRate * Time.fixedDeltaTime);
+			currentShieldStrength += (stats.ShieldRegenRate.Value * Time.fixedDeltaTime);
 
 			yield return new WaitForFixedUpdate();
 		}
-		while (currentShieldStrength < (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier));
+		while (currentShieldStrength < (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier));
 
-		currentShieldStrength = (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier);
+		currentShieldStrength = (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier);
 
 		_shieldTimer = null;
 
@@ -479,7 +421,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 			yield return new WaitForSeconds(shieldBlinkInterval2 * 1.5f);
 		}
-		while (currentShieldStrength < ((maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier) / 3) && currentShieldStrength > 0);
+		while (currentShieldStrength < ((stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier) / 3) && currentShieldStrength > 0);
 
 		Shields.transform.GetChild(0).GetChild(0).GetComponent<Image>().color = ShieldNormalColor;
 		Shields.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = ShieldNormalColor;
@@ -506,7 +448,7 @@ public class PlayerController : MonoBehaviour, IPunObservable
 
 			ShieldRecharge.fillAmount = 0f;
 
-			if (currentShieldStrength != (maxShieldStrength * GameSettingsManager.Instance.playerHealthMultiplier) && Shields.alpha != 1)
+			if (currentShieldStrength != (stats.ShieldMaxStrength.Value * GameSettingsManager.Instance.playerHealthMultiplier) && Shields.alpha != 1)
 			{
 				Shields.StopFade(false);
 			}

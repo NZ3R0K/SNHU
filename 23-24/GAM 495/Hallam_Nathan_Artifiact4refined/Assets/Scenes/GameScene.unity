@@ -1725,8 +1725,8 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     sprite: {fileID: 21300000, guid: b42430abb589d4142931ef9ce81856e9, type: 3}
     HP: 0
-    speedMax: 20
-    speedMin: 10
+    speedMax: 5
+    speedMin: 3
     splitCount: 0
     splitIndex: -1
     lifetime: 1
@@ -1739,8 +1739,8 @@ MonoBehaviour:
     color: {r: 0, g: 1, b: 0, a: 1}
     sprite: {fileID: 21300000, guid: 3ca0f32ec28c41d419abe87120e0e9e2, type: 3}
     HP: 1
-    speedMax: 20
-    speedMin: 15
+    speedMax: 3
+    speedMin: 1
     splitCount: 6
     splitIndex: 0
     lifetime: -1
@@ -1753,8 +1753,8 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 0, a: 1}
     sprite: {fileID: 21300000, guid: 3ca0f32ec28c41d419abe87120e0e9e2, type: 3}
     HP: 5
-    speedMax: 12
-    speedMin: 8
+    speedMax: 1
+    speedMin: 0.5
     splitCount: 5
     splitIndex: 1
     lifetime: -1
@@ -1767,8 +1767,8 @@ MonoBehaviour:
     color: {r: 1, g: 0, b: 0, a: 1}
     sprite: {fileID: 21300000, guid: 3ca0f32ec28c41d419abe87120e0e9e2, type: 3}
     HP: 10
-    speedMax: 7
-    speedMin: 3
+    speedMax: 1
+    speedMin: 0.25
     splitCount: 3
     splitIndex: 2
     lifetime: -1
@@ -1804,7 +1804,10 @@ MonoBehaviour:
     fireSound: {fileID: 8300000, guid: 81b69c8e406f3fe4892debfc08a526e5, type: 3}
     mass: 1
     life: 1
-  shuttleStats: {fileID: 11400000, guid: d3f88988ad526b4468faa57184740210, type: 2}
+  shuttleStats:
+  - {fileID: 11400000, guid: b97b790f14ac85d4bbfc312f9ca4e1c3, type: 2}
+  - {fileID: 11400000, guid: e6fea5d542136894d805b6e92e15a357, type: 2}
+  - {fileID: 11400000, guid: 72e0373ace2175846a984e663ef7a47a, type: 2}
   DeathCanvas: {fileID: 671249932}
   AlivePlayers: []
   scoreMXBar: {fileID: 613846065}

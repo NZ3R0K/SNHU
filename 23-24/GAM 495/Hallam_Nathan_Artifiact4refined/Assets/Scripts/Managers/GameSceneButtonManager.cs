@@ -19,6 +19,17 @@ public class GameSceneButtonManager : MonoBehaviour
 	public void ReturnToMain()
 	{
 		StopAllCoroutines();
-		PhotonNetwork.LeaveRoom();
+		//PhotonNetwork.LeaveRoom();
+
+		if (PhotonNetwork.OfflineMode)
+		{
+			PhotonNetwork.Disconnect();
+
+			PhotonManager.Instance.Connect();
+		}
+		else
+		{
+			PhotonNetwork.LeaveRoom();
+		}
 	}
 }

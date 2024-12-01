@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0e308ca4556f649997e611af132475, type: 3}
+  m_Name: PS_Vintage
+  m_EditorClassIdentifier: 
+  MaxSpeed:
+    BaseValue: 71
+  Acceleration:
+    BaseValue: 10
+  RotationSpeed:
+    BaseValue: 145
+  BrakingPower:
+    BaseValue: 0.15
+  ShieldMaxStrength:
+    BaseValue: 10
+  ShieldRechargeRate:
+    BaseValue: 10
+  ShieldRechargeDelay:
+    BaseValue: 3
+  ShieldRegenRate:
+    BaseValue: 2
+  ShieldRegenDelay:
+    BaseValue: 5
+  ShieldRegenCooldown:
+    BaseValue: 0
+  GracePeriod:
+    BaseValue: 1.5
+  shuttleName: Vintage
+  shuttleSprite: {fileID: 21300000, guid: 3eb51e29e903bd741a7f82dcc728bdd3, type: 3}
+  shuttlePrefab: {fileID: 1610712468715125143, guid: fb78d1c2913eac547bd23c24cc68c375, type: 3}

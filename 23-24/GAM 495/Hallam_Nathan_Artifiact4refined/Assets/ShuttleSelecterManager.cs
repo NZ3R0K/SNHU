@@ -9,7 +9,7 @@ public class ShuttleSelecterManager : MonoBehaviour
 {
 	public GameObject Content;
 	public GameObject Prefab;
-	public ShuttleInfo shuttleStats;
+	public List<PlayerStats> shuttleStats = new();
 	public TMP_Text currentShuttleText;
 	public Image currentShuttleImage;
 	public CanvasGroup ShuttleSelectGroup;
@@ -36,7 +36,7 @@ public class ShuttleSelecterManager : MonoBehaviour
 
 	void Start()
 	{
-		foreach(var shuttle in shuttleStats.shuttles)
+		foreach(var shuttle in shuttleStats)
 		{
 			GameObject shuttlePrefab = Instantiate(Prefab, Content.transform);
 			shuttlePrefab.GetComponent<Image>().sprite = shuttle.shuttleSprite;
@@ -63,7 +63,7 @@ public class ShuttleSelecterManager : MonoBehaviour
 
 	public void ShowShuttleStats(string name)
 	{
-		foreach (var shuttle in shuttleStats.shuttles)
+		foreach (var shuttle in shuttleStats)
 		{
 			if (shuttle.shuttleName == name)
 			{
@@ -72,24 +72,24 @@ public class ShuttleSelecterManager : MonoBehaviour
 				SelectShuttleButton.onClick.AddListener(() => ShuttleStatInfoCanvasGroup.SetActive(false));
 
 				shuttleNameText.text = "Shuttle: " + shuttle.shuttleName;
-				maxSpeedText.text = shuttle.maxSpeed.ToString();
-				accelerationText.text = shuttle.acceleration.ToString();
-				rotationSpeedText.text = shuttle.rotationSpeed.ToString();
-				brakingPowerText.text = shuttle.brakingPower.ToString();
-				maxShieldText.text = shuttle.maxShieldStrength.ToString();
-				shieldRechargeRateText.text = shuttle.shieldRechargeRate.ToString();
-				shieldRechargeWaitText.text = shuttle.shieldRechargeWait.ToString();
-				shieldRegenRateText.text = shuttle.shieldRegenRate.ToString();
-				shieldRegenPauseText.text = shuttle.shieldRegenPause.ToString();
-				shieldRegenWaitText.text = shuttle.shieldRegenWait.ToString();
-				gracePeriodText.text = shuttle.gracePeriod.ToString();
+				maxSpeedText.text = shuttle.MaxSpeed.BaseValue.ToString();
+				accelerationText.text = shuttle.Acceleration.BaseValue.ToString();
+				rotationSpeedText.text = shuttle.RotationSpeed.BaseValue.ToString();
+				brakingPowerText.text = shuttle.BrakingPower.BaseValue.ToString();
+				maxShieldText.text = shuttle.ShieldMaxStrength.BaseValue.ToString();
+				shieldRechargeRateText.text = shuttle.ShieldRechargeRate.BaseValue.ToString();
+				shieldRechargeWaitText.text = shuttle.ShieldRechargeTimer.BaseValue.ToString();
+				shieldRegenRateText.text = shuttle.ShieldRegenRate.BaseValue.ToString();
+				shieldRegenPauseText.text = shuttle.ShieldRegenDelay.BaseValue.ToString();
+				shieldRegenWaitText.text = shuttle.ShieldRegenTimer.BaseValue.ToString();
+				gracePeriodText.text = shuttle.GracePeriod.BaseValue.ToString();
 			}
 		}
 	}
 
 	public void SelectShuttle(string name)
 	{
-		foreach (var shuttle in shuttleStats.shuttles)
+		foreach (var shuttle in shuttleStats)
 		{
 			if (shuttle.shuttleName == name)
 			{
