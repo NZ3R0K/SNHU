@@ -24,14 +24,14 @@ MonoBehaviour:
     BaseValue: 10
   ShieldRechargeRate:
     BaseValue: 10
-  ShieldRechargeDelay:
+  ShieldRechargeTimer:
     BaseValue: 3
   ShieldRegenRate:
     BaseValue: 2
   ShieldRegenDelay:
     BaseValue: 5
-  ShieldRegenCooldown:
-    BaseValue: 0
+  ShieldRegenTimer:
+    BaseValue: 8
   GracePeriod:
     BaseValue: 1.5
   shuttleName: Vintage

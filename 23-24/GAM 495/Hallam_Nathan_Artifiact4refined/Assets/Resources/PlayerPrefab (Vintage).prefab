@@ -10022,9 +10022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: b97b790f14ac85d4bbfc312f9ca4e1c3, type: 2}
-  ShieldBar: {fileID: 6192822319869387879}
-  ShieldRecharge: {fileID: 2300805332621911464}
-  Shields: {fileID: 3287356233225159126}
   ShieldNormalColor: {r: 1, g: 1, b: 1, a: 1}
   LowShieldBlink1: {r: 1, g: 0, b: 0, a: 1}
   LowShieldBlink2: {r: 1, g: 0, b: 0, a: 0.5019608}
@@ -10036,6 +10033,10 @@ MonoBehaviour:
   primaryWeaponOnCooldown: 0
   SpawnLocation: {fileID: 3915791228592224358}
   color: {r: 0, g: 0, b: 0, a: 0}
+  onPlayerDamageTaken: {fileID: 11400000, guid: 3aef153c5a74b4a41844995a21dee0de, type: 2}
+  onUpdateShieldEnergy: {fileID: 11400000, guid: 7426b000a724aa741bd7c2c3b00733c0, type: 2}
+  onUpdateShieldBar: {fileID: 11400000, guid: baa567798f2dbaa49baa23216b3cdba2, type: 2}
+  onFadeShieldHUD: {fileID: 11400000, guid: f6de57c5b0ea63e458a070e9ce014dca, type: 2}
 --- !u!199 &8901624992134988880
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -10198,6 +10199,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8091049845865216396}
   - component: {fileID: 7693183749516910217}
+  - component: {fileID: 5974762447995499884}
+  - component: {fileID: 8719022222154335384}
+  - component: {fileID: 3507821249441048896}
+  - component: {fileID: 8967129759016811105}
+  - component: {fileID: 7385250691414367686}
   m_Layer: 7
   m_Name: HUD
   m_TagString: Untagged
@@ -10212,7 +10218,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3418016568771466139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10220,10 +10226,10 @@ RectTransform:
   - {fileID: 3326228908044544769}
   m_Father: {fileID: 1610712468715125128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1328, y: 747}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7693183749516910217
 Canvas:
@@ -10248,6 +10254,138 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &5974762447995499884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418016568771466139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afb460c621ff434fa0a3bd5a711852f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShieldBar: {fileID: 6192822319869387879}
+  ShieldRecharge: {fileID: 2300805332621911464}
+  Shields: {fileID: 3287356233225159126}
+  ShieldNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  LowShieldBlink1: {r: 1, g: 0, b: 0, a: 1}
+  LowShieldBlink2: {r: 1, g: 0, b: 0, a: 0.5}
+  shieldBlinkInterval1: 0.25
+  shieldBlinkInterval2: 0.25
+--- !u!114 &8719022222154335384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418016568771466139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee09fc905ffc154ebb5b3c4965040ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7426b000a724aa741bd7c2c3b00733c0, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5974762447995499884}
+        m_TargetAssemblyTypeName: HUDManager, Assembly-CSharp
+        m_MethodName: SetShieldRecharge
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3507821249441048896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418016568771466139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee09fc905ffc154ebb5b3c4965040ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: baa567798f2dbaa49baa23216b3cdba2, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5974762447995499884}
+        m_TargetAssemblyTypeName: HUDManager, Assembly-CSharp
+        m_MethodName: SetShieldBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8967129759016811105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418016568771466139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee09fc905ffc154ebb5b3c4965040ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f6de57c5b0ea63e458a070e9ce014dca, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5974762447995499884}
+        m_TargetAssemblyTypeName: HUDManager, Assembly-CSharp
+        m_MethodName: FadeShields
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7385250691414367686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418016568771466139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee09fc905ffc154ebb5b3c4965040ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 3aef153c5a74b4a41844995a21dee0de, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5974762447995499884}
+        m_TargetAssemblyTypeName: HUDManager, Assembly-CSharp
+        m_MethodName: SetShieldBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3442139583427070448
 GameObject:
   m_ObjectHideFlags: 0

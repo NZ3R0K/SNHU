@@ -10123,9 +10123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: e6fea5d542136894d805b6e92e15a357, type: 2}
-  ShieldBar: {fileID: 6195670462095158997}
-  ShieldRecharge: {fileID: 2298023427709333274}
-  Shields: {fileID: 3284579267466120036}
   ShieldNormalColor: {r: 1, g: 1, b: 1, a: 1}
   LowShieldBlink1: {r: 1, g: 0, b: 0, a: 1}
   LowShieldBlink2: {r: 1, g: 0, b: 0, a: 0.5019608}
@@ -10137,6 +10134,10 @@ MonoBehaviour:
   primaryWeaponOnCooldown: 0
   SpawnLocation: {fileID: 3917442296529253076}
   color: {r: 1, g: 1, b: 1, a: 1}
+  onPlayerDamageTaken: {fileID: 11400000, guid: 3aef153c5a74b4a41844995a21dee0de, type: 2}
+  onUpdateShieldEnergy: {fileID: 11400000, guid: 7426b000a724aa741bd7c2c3b00733c0, type: 2}
+  onUpdateShieldBar: {fileID: 11400000, guid: baa567798f2dbaa49baa23216b3cdba2, type: 2}
+  onFadeShieldHUD: {fileID: 11400000, guid: f6de57c5b0ea63e458a070e9ce014dca, type: 2}
 --- !u!199 &8899903031123971810
 ParticleSystemRenderer:
   serializedVersion: 6

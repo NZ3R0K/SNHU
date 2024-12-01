@@ -24,14 +24,14 @@ MonoBehaviour:
     BaseValue: 2
   ShieldRechargeRate:
     BaseValue: 4
-  ShieldRechargeDelay:
-    BaseValue: 4
+  ShieldRechargeTimer:
+    BaseValue: 2
   ShieldRegenRate:
     BaseValue: 0.5
   ShieldRegenDelay:
     BaseValue: 3
-  ShieldRegenCooldown:
-    BaseValue: 0
+  ShieldRegenTimer:
+    BaseValue: 5
   GracePeriod:
     BaseValue: 2
   shuttleName: Hopper

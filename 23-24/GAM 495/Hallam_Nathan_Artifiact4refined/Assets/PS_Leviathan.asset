@@ -24,14 +24,14 @@ MonoBehaviour:
     BaseValue: 25
   ShieldRechargeRate:
     BaseValue: 5
-  ShieldRechargeDelay:
+  ShieldRechargeTimer:
     BaseValue: 8
   ShieldRegenRate:
     BaseValue: 2
   ShieldRegenDelay:
-    BaseValue: 5
-  ShieldRegenCooldown:
-    BaseValue: 0
+    BaseValue: 7
+  ShieldRegenTimer:
+    BaseValue: 10
   GracePeriod:
     BaseValue: 1
   shuttleName: Leviathan
