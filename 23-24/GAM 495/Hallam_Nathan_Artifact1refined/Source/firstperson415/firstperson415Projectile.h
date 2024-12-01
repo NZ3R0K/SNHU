@@ -10,13 +10,13 @@ class USphereComponent;
 class UProjectileMovementComponent;
 class UNiagaraSystem;
 
-UCLASS(config=Game)
+UCLASS(config = Game)
 class Afirstperson415Projectile : public AActor
 {
 	GENERATED_BODY()
 
 	/** Sphere collision component */
-	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
+	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
 	USphereComponent* CollisionComp;
 
 	/** Projectile movement component */
@@ -46,6 +46,12 @@ class Afirstperson415Projectile : public AActor
 	//Particle System
 	UPROPERTY(EditAnywhere)
 	UNiagaraSystem* colorP;
+
+	UPROPERTY(EditAnywhere)
+	bool useDecal = true;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UObject> Portal;
 
 
 public:

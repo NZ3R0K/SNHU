@@ -11,7 +11,7 @@
 #include "PerlinProcTerrain.h"
 
 
-Afirstperson415Projectile::Afirstperson415Projectile() 
+Afirstperson415Projectile::Afirstperson415Projectile()
 {
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
@@ -75,37 +75,48 @@ void Afirstperson415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* Othe
 	//If another actor is hit
 	if (OtherActor != nullptr)
 	{
-		if (colorP) 
+		if (useDecal)
 		{
-			//Create new particle system instance at hit location
-			UNiagaraComponent* particleComp = UNiagaraFunctionLibrary::SpawnSystemAttached(colorP, HitComp, NAME_None, FVector(-20.0f, 0.0f, 0.0f), FRotator(0.0f), EAttachLocation::KeepRelativeOffset, true);
-			//Set particle color
-			particleComp->SetNiagaraVariableLinearColor("RandColor", randColor);
+			if (colorP)
+			{
+				//Create new particle system instance at hit location
+				UNiagaraComponent* particleComp = UNiagaraFunctionLibrary::SpawnSystemAttached(colorP, HitComp, NAME_None, FVector(-20.0f, 0.0f, 0.0f), FRotator(0.0f), EAttachLocation::KeepRelativeOffset, true);
+				//Set particle color
+				particleComp->SetNiagaraVariableLinearColor("RandColor", randColor);
+				//destroy balls mesh
+				ballMesh->DestroyComponent();
+				//Set collision profile to no collision so projectile will no longer collide
+				CollisionComp->BodyInstance.SetCollisionProfileName("NoCollision");
+			}
+
+			//Choose frame from sprite sheet for splat effect
+			float frameNum = UKismetMathLibrary::RandomFloatInRange(0.0f, 3.0f);
+
+			//Spawn decal at position
+			auto Decal = UGameplayStatics::SpawnDecalAtLocation(GetWorld(), baseMat, FVector(UKismetMathLibrary::RandomFloatInRange(20.0f, 40.0f)), Hit.Location, Hit.Normal.Rotation(), 0.f);
+			//Create dynamic material instance
+			auto MatInstance = Decal->CreateDynamicMaterialInstance();
+
+			//Set values for dynamic material
+			MatInstance->SetVectorParameterValue("Color", randColor);
+			MatInstance->SetScalarParameterValue("Frame", frameNum);
+
+			//Cast other actor to procedural terrain
+			APerlinProcTerrain* procTerrain = Cast<APerlinProcTerrain>(OtherActor);
+
+			//If projectile hit terrain
+			if (procTerrain)
+			{
+				procTerrain->AlterMesh(Hit.ImpactPoint);
+			}
+		}
+		else
+		{
+			UObject* NewPortal = GetWorld()->SpawnActor<UObject>(Portal, Hit.Location, Hit.Normal.Rotation());
 			//destroy balls mesh
 			ballMesh->DestroyComponent();
 			//Set collision profile to no collision so projectile will no longer collide
 			CollisionComp->BodyInstance.SetCollisionProfileName("NoCollision");
-		}
-
-		//Choose frame from sprite sheet for splat effect
-		float frameNum = UKismetMathLibrary::RandomFloatInRange(0.0f, 3.0f);
-
-		//Spawn decal at position
-		auto Decal = UGameplayStatics::SpawnDecalAtLocation(GetWorld(), baseMat, FVector(UKismetMathLibrary::RandomFloatInRange(20.0f, 40.0f)), Hit.Location, Hit.Normal.Rotation(), 0.f);
-		//Create dynamic material instance
-		auto MatInstance = Decal->CreateDynamicMaterialInstance();
-
-		//Set values for dynamic material
-		MatInstance->SetVectorParameterValue("Color", randColor);
-		MatInstance->SetScalarParameterValue("Frame", frameNum);
-	
-		//Cast other actor to procedural terrain
-		APerlinProcTerrain* procTerrain = Cast<APerlinProcTerrain>(OtherActor);
-
-		//If projectile hit terrain
-		if (procTerrain)
-		{
-			procTerrain->AlterMesh(Hit.ImpactPoint);
 		}
 	}
 }
