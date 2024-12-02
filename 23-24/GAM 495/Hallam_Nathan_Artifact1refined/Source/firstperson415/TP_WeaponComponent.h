@@ -33,10 +33,14 @@ public:
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputMappingContext* FireMappingContext;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputMappingContext* FireMappingContext2;
 
 	/** Fire Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* FireAction;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputAction* FireAction2;
 
 	/** Sets default values for this component's properties */
 	UTP_WeaponComponent();
@@ -48,6 +52,10 @@ public:
 	/** Make the weapon Fire a Projectile */
 	UFUNCTION(BlueprintCallable, Category="Weapon")
 	void Fire();
+
+	/** Make the weapon Fire a Projectile */
+	UFUNCTION(BlueprintCallable, Category = "Weapon")
+	void Fire2();
 
 protected:
 	/** Ends gameplay for this component. */
