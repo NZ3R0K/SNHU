@@ -40,6 +40,11 @@ Afirstperson415Character::Afirstperson415Character()
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
 }
 
+USkeletalMeshComponent* Afirstperson415Character::GetMesh1P()
+{
+	return Mesh1P;
+}
+
 void Afirstperson415Character::BeginPlay()
 {
 	// Call the base class  

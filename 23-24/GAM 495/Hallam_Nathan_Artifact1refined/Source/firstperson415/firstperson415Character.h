@@ -22,7 +22,7 @@ class Afirstperson415Character : public ACharacter
 	GENERATED_BODY()
 
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	USkeletalMeshComponent* Mesh1P;
 
 	/** First person camera */
@@ -44,6 +44,8 @@ class Afirstperson415Character : public ACharacter
 public:
 	Afirstperson415Character();
 
+	UFUNCTION(BlueprintCallable, Category = Mesh)
+	USkeletalMeshComponent* GetMesh1P();
 protected:
 	virtual void BeginPlay();
 
